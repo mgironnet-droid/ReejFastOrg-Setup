@@ -1,0 +1,32 @@
+{
+  "packages": [
+    {
+      "id": "flow-actions-basepack",
+      "name": "Flow Actions Base Pack 3.19",
+      "description": "UnofficialSF \u2014 required by the Screen Components Base Pack and Datatable",
+      "versionId": "04t8b00000170r5AAA",
+      "order": 20
+    },
+    {
+      "id": "flow-screen-components-basepack",
+      "name": "Flow Screen Components Base Pack 3.3.10",
+      "description": "UnofficialSF \u2014 required by Datatable",
+      "versionId": "04t5G000004fzDQQAY",
+      "order": 30,
+      "dependsOn": [
+        "flow-actions-basepack"
+      ]
+    },
+    {
+      "id": "datatable",
+      "name": "Datatable 4.3.7",
+      "description": "UnofficialSF Datatable flow screen component",
+      "versionId": "04tHs000000X23BIAS",
+      "order": 40,
+      "dependsOn": [
+        "flow-actions-basepack",
+        "flow-screen-components-basepack"
+      ]
+    }
+  ]
+}

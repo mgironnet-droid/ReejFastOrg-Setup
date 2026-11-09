@@ -1,0 +1,184 @@
+{
+  "packages": [
+    {
+      "id": "reej-org-init",
+      "name": "ReejOrgInit 1.0.0-3",
+      "source": "Reej",
+      "description": "Reej org initialisation: Sales & Service apps, record pages, layouts, flows, permission sets, labels, translations",
+      "versionId": "04tg8000000Xgi1AAC",
+      "order": 10,
+      "default": true,
+      "postInstall": [
+        {
+          "type": "deploy",
+          "path": "C:\\Groupe_Reej\\Workspace\\ReejOrgInitPackage\\unpackaged\\post-install",
+          "label": "Deploy org settings & profiles (unpackaged/post-install)"
+        }
+      ],
+      "url": "https://github.com/ReejGrenoble/ReejOrgInitPackage"
+    },
+    {
+      "id": "generic-pdf-generator",
+      "name": "Generic PDF Generator 1.0.0-1",
+      "source": "Reej",
+      "description": "Invocable Flow action that renders any Visualforce page as a PDF and saves it as a Salesforce File, optionally linked to a record",
+      "versionId": "04tg8000000Vpr3AAC",
+      "order": 12,
+      "url": "https://github.com/ReejGrenoble/GenericPDFGenerator"
+    },
+    {
+      "id": "render-email-template",
+      "name": "Render Email Template 1.0.0-1",
+      "source": "Reej",
+      "description": "Invocable Flow action that renders an email template for a Contact, Lead or User without sending an email",
+      "versionId": "04tg8000000Vi3BAAS",
+      "order": 14,
+      "url": "https://github.com/ReejGrenoble/RenderEmailTemplate"
+    },
+    {
+      "id": "demo-addon",
+      "name": "Customer customization",
+      "source": "Reej",
+      "kind": "demoBranding",
+      "description": "Brands the org for the customer: renames the Reej apps to <Company> Sales and <Company> Service Console, renames the Reej Standard User profile to <Company> Standard User, and creates an SLDS 2 theme with the company icon and brand colour. No package is installed.",
+      "order": 16,
+      "dependsOn": [
+        "reej-org-init"
+      ],
+      "branding": {
+        "themeName": "Reej_Demo_Theme",
+        "profiles": [
+          {
+            "name": "Reej Standard User",
+            "label": "{company} Standard User"
+          }
+        ],
+        "apps": [
+          {
+            "name": "Reej_App_Sales",
+            "label": "{company} Sales"
+          },
+          {
+            "name": "Reej_App_ServiceConsole",
+            "label": "{company} Service Console"
+          }
+        ]
+      }
+    },
+    {
+      "id": "flow-actions-basepack",
+      "name": "Flow Actions Base Pack 3.19",
+      "source": "UnofficialSF",
+      "description": "UnofficialSF — required by the Screen Components Base Pack and Datatable",
+      "versionId": "04t8b00000170r5AAA",
+      "order": 20,
+      "url": "https://unofficialsf.com/flow-action-and-screen-component-basepacks/"
+    },
+    {
+      "id": "flow-screen-components-basepack",
+      "name": "Flow Screen Components Base Pack 3.3.10",
+      "source": "UnofficialSF",
+      "description": "UnofficialSF — required by Datatable",
+      "versionId": "04t5G000004fzDQQAY",
+      "order": 30,
+      "dependsOn": [
+        "flow-actions-basepack"
+      ],
+      "url": "https://unofficialsf.com/flow-action-and-screen-component-basepacks/"
+    },
+    {
+      "id": "datatable",
+      "name": "Datatable 4.3.7",
+      "source": "UnofficialSF",
+      "description": "UnofficialSF Datatable flow screen component",
+      "versionId": "04tHs000000X23BIAS",
+      "order": 40,
+      "dependsOn": [
+        "flow-actions-basepack",
+        "flow-screen-components-basepack"
+      ],
+      "url": "https://unofficialsf.com/datatable-lightning-web-component-for-flow-screens-2/"
+    },
+    {
+      "id": "file-upload-improved",
+      "name": "File Upload Improved 2.0.2",
+      "source": "UnofficialSF",
+      "description": "Flow screen component to upload files, with more options than the standard one (Josh Dayment & Ryan Mercer). Assign the \"File Upload Improved\" permission set to its users.",
+      "versionId": "04tHs000001G4YpIAK",
+      "order": 50,
+      "url": "https://unofficialsf.com/from-josh-dayment-improved-file-upload-in-flow-screens/"
+    },
+    {
+      "id": "show-toast",
+      "name": "Show Toast 2.0",
+      "source": "UnofficialSF",
+      "description": "Flow action that shows a toast message (success, warning, error, info) in flows running on Lightning pages",
+      "versionId": "04t1K000002ikkf",
+      "order": 60,
+      "url": "https://unofficialsf.com/show-toast-flow-action/"
+    },
+    {
+      "id": "dlrs",
+      "name": "DLRS 2.25 — Declarative Lookup Rollup Summaries",
+      "source": "AppExchange",
+      "description": "Community app to build roll-up summaries over lookup relationships, without code. With Admins only access, assign the \"Lookup Rollup Summaries - Process Rollups\" permission set to the users who trigger roll-ups.",
+      "versionId": "04tKA000000cCA1YAM",
+      "order": 70,
+      "url": "https://sfdo-community-sprints.github.io/DLRS-Documentation/"
+    },
+    {
+      "id": "lightning-messaging-utility",
+      "name": "Lightning Messaging Utility",
+      "source": "AppExchange",
+      "description": "Salesforce Labs managed package: show targeted messages and announcements to users in a Lightning utility bar or on pages",
+      "versionId": "04t5w000005PlsJAAS",
+      "order": 80,
+      "url": "https://appexchange.salesforce.com/appxListingDetail?listingId=a0N3A00000G12j9UAB"
+    },
+    {
+      "id": "rich-text-input",
+      "name": "Input Rich Text 1.7",
+      "source": "UnofficialSF",
+      "description": "Flow screen rich text input with word-processing features (Nick Sauer): find & replace, auto-replace, banned words, character counter. Set enableAdvancedTools to true on the component to use them.",
+      "versionId": "04t5G000004fzB0QAI",
+      "order": 65,
+      "url": "https://unofficialsf.com/nick-sauer-adds-smart-word-processing-features-to-rich-text-input/"
+    },
+    {
+      "id": "reej-account-contact-card",
+      "name": "Account Contact Card 0.8.0-1",
+      "source": "Reej",
+      "description": "Profile card LWC for Account, Contact and Lead: LinkedIn picture, Brandfetch company logo, configurable fields and colours. Adds CSP Trusted Sites for media.licdn.com and cdn.brandfetch.io. Assign the ReejAccountContactCardAccess permission set to the users.",
+      "versionId": "04tg8000000aNR7AAM",
+      "order": 17,
+      "url": "https://github.com/ReejGrenoble/ReejAccountContactCard",
+      "postInstall": [
+        {
+          "type": "permset",
+          "name": [
+            "ReejAccountContactCardAccess"
+          ],
+          "label": "Assign ReejAccountContactCardAccess to you"
+        }
+      ]
+    },
+    {
+      "id": "reej-contact-hierarchy",
+      "name": "Contact Hierarchy (Org Chart) 0.2.3-1",
+      "source": "Reej",
+      "description": "Org chart of an account's direct and indirect contacts, with Influence picklist and drag and drop to change Reports To. Indirect contacts need Contacts to Multiple Accounts enabled. Assign the ReejContactHierarchy permission set to the users.",
+      "versionId": "04tg8000000a5lxAAA",
+      "order": 18,
+      "url": "https://github.com/ReejGrenoble/ReejContactHierarchy",
+      "postInstall": [
+        {
+          "type": "permset",
+          "name": [
+            "ReejContactHierarchy"
+          ],
+          "label": "Assign ReejContactHierarchy to you"
+        }
+      ]
+    }
+  ]
+}

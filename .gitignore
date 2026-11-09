@@ -1,0 +1,11 @@
+# Salesforce CLI local org cache
+.sf/
+.sfdx/
+
+# Build output / dependencies
+node_modules/
+out/
+
+# OS / editor noise
+.DS_Store
+Thumbs.db

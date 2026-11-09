@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="152 44 720 720" fill="none" stroke="currentColor" stroke-width="30" stroke-linecap="round" stroke-linejoin="round">
+  <!-- ReejFastOrg logo: the Reej mark above a cloud (the org) struck by a lightning bolt -->
+  <path d="M502 92H388V342H502M388 223H465" stroke-linecap="butt"/>
+  <path d="M522 92H637V342H522M637 223H558" stroke-linecap="butt"/>
+  <path d="M300 700H724C784 700 830 656 830 598C830 544 790 502 738 496C730 430 676 382 610 382C566 382 528 402 504 434C484 418 458 410 430 410C366 410 316 460 312 522C252 528 206 576 206 614C206 662 248 700 300 700Z"/>
+  <path d="M540 450L462 584H526L496 666L586 540H520L548 450Z" fill="currentColor" stroke-width="16"/>
+</svg>
