@@ -2,7 +2,7 @@
   "name": "reejfastorg-setup",
   "displayName": "ReejFastOrg Setup",
   "description": "Connect to a Salesforce org (dev, sandbox, prod) with the sf CLI, pick packages from a catalog and install them in order, with post-install steps.",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "publisher": "reej",
   "license": "UNLICENSED",
   "engines": {

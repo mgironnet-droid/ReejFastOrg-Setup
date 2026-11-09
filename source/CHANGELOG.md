@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.6.1 — 2026-11-09
+- Built-in list: **Generic PDF Generator 1.0.1-1** (`04tg8000000aOrpAAE`), was 1.0.0-1.
+
 ## 0.6.0 — 2026-11-09
 - Built-in list, Reej group: **Account Contact Card 0.8.0-1** (`04tg8000000aNR7AAM`) and **Contact Hierarchy (Org Chart) 0.2.3-1** (`04tg8000000a5lxAAA`). After installing, each assigns its permission set (ReejAccountContactCardAccess / ReejContactHierarchy) to the installing user.
 

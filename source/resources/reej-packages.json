@@ -19,10 +19,10 @@
     },
     {
       "id": "generic-pdf-generator",
-      "name": "Generic PDF Generator 1.0.0-1",
+      "name": "Generic PDF Generator 1.0.1-1",
       "source": "Reej",
       "description": "Invocable Flow action that renders any Visualforce page as a PDF and saves it as a Salesforce File, optionally linked to a record",
-      "versionId": "04tg8000000Vpr3AAC",
+      "versionId": "04tg8000000aOrpAAE",
       "order": 12,
       "url": "https://github.com/ReejGrenoble/GenericPDFGenerator"
     },
